@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 import os
+from dotenv import load_dotenv
+load_dotenv('.env')
 
 ACCOUNT_EMAIL = os.environ['ACCOUNT_EMAIL']
 ACCOUNT_PASSWORD = os.environ['ACCOUNT_PASSWORD']
